@@ -10,6 +10,7 @@ import {
   ContactCard,
   ContactCardImage,
   ContactCardContent,
+  Email,
 } from "./style";
 
 import { FaWhatsapp, FaEnvelopeOpen, FaLinkedin } from "react-icons/fa";
@@ -76,18 +77,7 @@ export const Contacts = () => {
                   Send me an email reporting feedbacks, suggestions and ideas
                 </Text>
 
-                <Text
-                  as="a"
-                  color="grey2"
-                  type="body2"
-                  target="_blank"
-                  href={`mailto=${userData.emailUser}`}
-                  onClick={() =>
-                    (window.location.href = "mailto:nekelpatrick.com")
-                  }
-                >
-                  Send me an email
-                </Text>
+                <Email>josepedro.bernardes1@gmail.com</Email>
               </ContactCardContent>
             </ContactCard>
             <ContactCard>
